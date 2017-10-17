@@ -1,0 +1,13 @@
+D:\DM113\dm113-final-project\StockService\EstoqueLibrary\obj\Debug\EstoqueLibrary.csprojResolveAssemblyReference.cache
+D:\DM113\dm113-final-project\StockService\EstoqueLibrary\bin\Debug\EstoqueLibrary.dll.config
+D:\DM113\dm113-final-project\StockService\EstoqueLibrary\bin\Debug\EstoqueLibrary.dll
+D:\DM113\dm113-final-project\StockService\EstoqueLibrary\bin\Debug\EstoqueLibrary.pdb
+D:\DM113\dm113-final-project\StockService\EstoqueLibrary\bin\Debug\EntityFramework.dll
+D:\DM113\dm113-final-project\StockService\EstoqueLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\DM113\dm113-final-project\StockService\EstoqueLibrary\bin\Debug\EstoqueEntityModel.dll
+D:\DM113\dm113-final-project\StockService\EstoqueLibrary\bin\Debug\EstoqueEntityModel.pdb
+D:\DM113\dm113-final-project\StockService\EstoqueLibrary\bin\Debug\EstoqueEntityModel.dll.config
+D:\DM113\dm113-final-project\StockService\EstoqueLibrary\bin\Debug\EntityFramework.xml
+D:\DM113\dm113-final-project\StockService\EstoqueLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\DM113\dm113-final-project\StockService\EstoqueLibrary\obj\Debug\EstoqueLibrary.dll
+D:\DM113\dm113-final-project\StockService\EstoqueLibrary\obj\Debug\EstoqueLibrary.pdb

@@ -1,0 +1,14 @@
+D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\bin\Debug\ProvedorEstoqueHost.exe.config
+D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\bin\Debug\ProvedorEstoqueHost.exe
+D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\bin\Debug\ProvedorEstoqueHost.pdb
+D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\bin\Debug\EstoqueLibrary.dll
+D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\bin\Debug\EstoqueEntityModel.dll
+D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\bin\Debug\EntityFramework.dll
+D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\bin\Debug\EstoqueLibrary.pdb
+D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\bin\Debug\EstoqueLibrary.dll.config
+D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\bin\Debug\EstoqueEntityModel.pdb
+D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\bin\Debug\EstoqueEntityModel.dll.config
+D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\bin\Debug\EntityFramework.xml
+D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\obj\Debug\ProvedorEstoqueHost.csprojResolveAssemblyReference.cache
+D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\obj\Debug\ProvedorEstoqueHost.exe
+D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\obj\Debug\ProvedorEstoqueHost.pdb

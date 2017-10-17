@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstoqueEntityModel", "EstoqueEntityModel\EstoqueEntityModel.csproj", "{2E1C2EB9-ACB2-4E5D-9BF3-19791EB61088}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstoqueLibrary", "EstoqueLibrary\EstoqueLibrary.csproj", "{685BDB35-02D6-4319-9C1B-31EFB85BBA52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvedorEstoqueHost", "ProvedorEstoqueHost\ProvedorEstoqueHost.csproj", "{092B7A81-1E7C-49F4-85F0-3A70AA36D49D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{2E1C2EB9-ACB2-4E5D-9BF3-19791EB61088}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E1C2EB9-ACB2-4E5D-9BF3-19791EB61088}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E1C2EB9-ACB2-4E5D-9BF3-19791EB61088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{685BDB35-02D6-4319-9C1B-31EFB85BBA52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{685BDB35-02D6-4319-9C1B-31EFB85BBA52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{685BDB35-02D6-4319-9C1B-31EFB85BBA52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{685BDB35-02D6-4319-9C1B-31EFB85BBA52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092B7A81-1E7C-49F4-85F0-3A70AA36D49D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092B7A81-1E7C-49F4-85F0-3A70AA36D49D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092B7A81-1E7C-49F4-85F0-3A70AA36D49D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092B7A81-1E7C-49F4-85F0-3A70AA36D49D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

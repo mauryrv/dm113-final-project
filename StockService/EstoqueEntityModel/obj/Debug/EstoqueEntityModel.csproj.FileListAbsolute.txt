@@ -10,3 +10,15 @@ c:\users\maury-pc\documents\visual studio 2017\Projects\StockService\EstoqueEnti
 c:\users\maury-pc\documents\visual studio 2017\Projects\StockService\EstoqueEntityModel\obj\Debug\EstoqueEntityModel.pdb
 c:\users\maury-pc\documents\visual studio 2017\Projects\StockService\EstoqueEntityModel\obj\Debug\EstoqueEntityModel.Migrations.Initial_DB_Creation.resources
 c:\users\maury-pc\documents\visual studio 2017\Projects\StockService\EstoqueEntityModel\obj\Debug\EstoqueEntityModel.csproj.GenerateResource.Cache
+D:\DM113\dm113-final-project\StockService\EstoqueEntityModel\bin\Debug\EstoqueEntityModel.dll.config
+D:\DM113\dm113-final-project\StockService\EstoqueEntityModel\bin\Debug\EstoqueEntityModel.dll
+D:\DM113\dm113-final-project\StockService\EstoqueEntityModel\bin\Debug\EstoqueEntityModel.pdb
+D:\DM113\dm113-final-project\StockService\EstoqueEntityModel\bin\Debug\EntityFramework.dll
+D:\DM113\dm113-final-project\StockService\EstoqueEntityModel\bin\Debug\EntityFramework.SqlServer.dll
+D:\DM113\dm113-final-project\StockService\EstoqueEntityModel\bin\Debug\EntityFramework.xml
+D:\DM113\dm113-final-project\StockService\EstoqueEntityModel\bin\Debug\EntityFramework.SqlServer.xml
+D:\DM113\dm113-final-project\StockService\EstoqueEntityModel\obj\Debug\EstoqueEntityModel.csprojResolveAssemblyReference.cache
+D:\DM113\dm113-final-project\StockService\EstoqueEntityModel\obj\Debug\EstoqueEntityModel.Migrations.Initial_DB_Creation.resources
+D:\DM113\dm113-final-project\StockService\EstoqueEntityModel\obj\Debug\EstoqueEntityModel.csproj.GenerateResource.Cache
+D:\DM113\dm113-final-project\StockService\EstoqueEntityModel\obj\Debug\EstoqueEntityModel.dll
+D:\DM113\dm113-final-project\StockService\EstoqueEntityModel\obj\Debug\EstoqueEntityModel.pdb
