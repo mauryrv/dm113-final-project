@@ -1,0 +1,16 @@
+D:\DM113\dm113-final-project\StockService\EstoqueClientV2\bin\Debug\EstoqueClientV2.exe.config
+D:\DM113\dm113-final-project\StockService\EstoqueClientV2\bin\Debug\EstoqueClientV2.exe
+D:\DM113\dm113-final-project\StockService\EstoqueClientV2\bin\Debug\EstoqueClientV2.pdb
+D:\DM113\dm113-final-project\StockService\EstoqueClientV2\bin\Debug\EntityFramework.dll
+D:\DM113\dm113-final-project\StockService\EstoqueClientV2\bin\Debug\EntityFramework.SqlServer.dll
+D:\DM113\dm113-final-project\StockService\EstoqueClientV2\bin\Debug\EstoqueLibrary.dll
+D:\DM113\dm113-final-project\StockService\EstoqueClientV2\bin\Debug\EstoqueEntityModel.dll
+D:\DM113\dm113-final-project\StockService\EstoqueClientV2\bin\Debug\EstoqueLibrary.pdb
+D:\DM113\dm113-final-project\StockService\EstoqueClientV2\bin\Debug\EstoqueLibrary.dll.config
+D:\DM113\dm113-final-project\StockService\EstoqueClientV2\bin\Debug\EntityFramework.xml
+D:\DM113\dm113-final-project\StockService\EstoqueClientV2\bin\Debug\EntityFramework.SqlServer.xml
+D:\DM113\dm113-final-project\StockService\EstoqueClientV2\bin\Debug\EstoqueEntityModel.pdb
+D:\DM113\dm113-final-project\StockService\EstoqueClientV2\bin\Debug\EstoqueEntityModel.dll.config
+D:\DM113\dm113-final-project\StockService\EstoqueClientV2\obj\Debug\EstoqueClientV2.csprojResolveAssemblyReference.cache
+D:\DM113\dm113-final-project\StockService\EstoqueClientV2\obj\Debug\EstoqueClientV2.exe
+D:\DM113\dm113-final-project\StockService\EstoqueClientV2\obj\Debug\EstoqueClientV2.pdb

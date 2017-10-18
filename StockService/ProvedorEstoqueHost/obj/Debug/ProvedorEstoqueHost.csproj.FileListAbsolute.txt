@@ -12,3 +12,5 @@ D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\bin\Debug\EntityFr
 D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\obj\Debug\ProvedorEstoqueHost.csprojResolveAssemblyReference.cache
 D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\obj\Debug\ProvedorEstoqueHost.exe
 D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\obj\Debug\ProvedorEstoqueHost.pdb
+D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\bin\Debug\EntityFramework.SqlServer.dll
+D:\DM113\dm113-final-project\StockService\ProvedorEstoqueHost\bin\Debug\EntityFramework.SqlServer.xml
