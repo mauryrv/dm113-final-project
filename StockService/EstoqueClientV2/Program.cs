@@ -18,70 +18,78 @@ namespace EstoqueClientV2
 
 
             ServicoEstoqueV2Client proxy = new ServicoEstoqueV2Client("WS2007HttpBinding_IServicoEstoque");
-            // ProductsServiceClient proxy = new ProductsServiceClient("NetTcpBinding_IProductsService");
-            // Create a proxy object and connect to the service 
-            //ProductsServiceClient proxy = new ProductsServiceClient();
-            /*Console.WriteLine("Test 1: List all products");
-            proxy.ListMatchingProducts("Prod").ToList();
-            List<ProductData> products = proxy.ListMatchingProducts("Prod").ToList();//proxy.ListProducts().ToList();
-            foreach (ProductData p in products)
+            Console.WriteLine("*****************************************************************");
+            //1) Verificar o estoque atual do Produto 1
+            Console.WriteLine("Verificar o estoque atual do Produto 1");
+            Console.WriteLine("");
+
+            int stockQty = proxy.CheckStock("1000");
+            Console.WriteLine("Id produto: 1000");
+            Console.WriteLine("Quantidade produto: " + stockQty);
+            Console.WriteLine("");
+
+            Console.WriteLine("*****************************************************************");
+            //2) Adicionar 20 unidades para este produto
+            Console.WriteLine("Adicionar 20 unidades para este produto");
+            Console.WriteLine("");
+            bool addStock = proxy.AddStock("1000", 20);
+            if (addStock)
             {
-                Console.WriteLine("Name: {0}", p.Name);
-                Console.WriteLine("Code: {0}", p.Code);
-                Console.WriteLine("Price: {0}", p.Price);
-                Console.WriteLine();
-            }
-            Console.WriteLine();
-
-            // Get details of this product
-            Console.WriteLine("Test 2: Display the details of a product");
-            ProductData product = proxy.GetProduct("0001");
-            Console.WriteLine("Name: {0}", product.Name);
-            Console.WriteLine("Code: {0}", product.Code);
-            Console.WriteLine("Price: {0}", product.Price);
-            Console.WriteLine();
-
-            // Query the stock of this product
-            Console.WriteLine("Test 3: Display stock of a product");
-            int quantity = proxy.CurrentStock("0001");
-            Console.WriteLine("Current stock: {0}", quantity);
-
-            // Add stock of this product
-            Console.WriteLine("Test 4: Add stock for a product");
-            if (proxy.AddStock("0001", 100))
-            {
-                quantity = proxy.CurrentStock("0001");
-                Console.WriteLine("Stock changed. Current stock: {0}", quantity);
+                Console.WriteLine("Estoque adicionado!");
+                Console.WriteLine("");
             }
             else
             {
-                Console.WriteLine("Stock update failed");
-            }
-            Console.WriteLine();
+                Console.WriteLine("Erro ao adicionar estoque!");
+                Console.WriteLine("");
 
-            // Get details of this product
-            Console.WriteLine("Test 2: Display the details of a product");
-            /*ProductData 
-            product = proxy.GetProduct("123");
-            if (product != null)
+            }
+            Console.WriteLine("*****************************************************************");
+            //3) Verificar o estoque do Produto 1 novamente
+            Console.WriteLine("Verificar o estoque do Produto 1 novamente");
+            Console.WriteLine("");
+            stockQty = proxy.CheckStock("1000");
+            Console.WriteLine("Id produto: 1000");
+            Console.WriteLine("Quantidade produto: " + stockQty);
+            Console.WriteLine("");
+
+            Console.WriteLine("*****************************************************************");
+            //4) Verificar o estoque atual do Produto 5
+            Console.WriteLine("Verificar o estoque atual do Produto 5");
+            Console.WriteLine("");
+            stockQty = proxy.CheckStock("5000");
+            Console.WriteLine("Id produto: 5000");
+            Console.WriteLine("Quantidade produto: " + stockQty);
+            Console.WriteLine("");
+            Console.WriteLine("*****************************************************************");
+            //5) Remover 10 unidades para este produto
+            Console.WriteLine("Remover 10 unidades para este produto");
+            Console.WriteLine("");
+            addStock = proxy.RemoveStock("5000", 10);
+            if (addStock)
             {
-                Console.WriteLine("Name: {0}", product.Name);
-                Console.WriteLine("Code: {0}", product.Code);
-                Console.WriteLine("Price: {0}", product.Price);
-                Console.WriteLine();
+                Console.WriteLine("Estoque removido!");
+                Console.WriteLine("");
             }
             else
             {
-                Console.WriteLine("No such product");
-                Console.WriteLine();
+                Console.WriteLine("Erro ao remover estoque!");
+                Console.WriteLine("");
+
             }
-            */
+            Console.WriteLine("*****************************************************************");
+            //6) Verificar o estoque do Produto 5 novamente
+            Console.WriteLine("Verificar o estoque do Produto 5 novamente");
+            Console.WriteLine("");
+
+            stockQty = proxy.CheckStock("5000");
+            Console.WriteLine("Id produto: 5000");
+            Console.WriteLine("Quantidade produto: " + stockQty);
+            Console.WriteLine("");
+            Console.WriteLine("*****************************************************************");
 
 
-
-
-
-           proxy.Close();
+            proxy.Close();
             Console.WriteLine("Press ENTER to finish"); Console.ReadLine();
 
 

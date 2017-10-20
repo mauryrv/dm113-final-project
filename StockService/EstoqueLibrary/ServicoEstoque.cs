@@ -26,7 +26,7 @@ namespace EstoqueLibrary
                 }
 
             }
-            catch
+            catch(Exception ex)
             {
                 // If an exception occurs, return false to indicate failure
                 return false;
@@ -49,15 +49,16 @@ namespace EstoqueLibrary
 
                         // Find the Stock object that matches the parameters passed
                         // in to the operation
-                        Stock stock = database.Stocks.First(pi => pi.ProductId == productCode);
-                        stock.Quantity = quantity;
-                        database.Stocks.Add(stock);
+                        Stock stockOrigin = database.Stocks.First(pi => pi.ProductId == productCode);
+                        Stock stockUpdated = stockOrigin;
+                        stockUpdated.Quantity = stockOrigin.Quantity+quantity;
+                        database.Entry(stockOrigin).CurrentValues.SetValues(stockUpdated);
                         database.SaveChanges();
                     }
                 }
 
             }
-            catch
+            catch(Exception ex)
             {
                 // If an exception occurs, return false to indicate failure
                 return false;
@@ -78,14 +79,14 @@ namespace EstoqueLibrary
                     if (ProductExists(productCode, database))
                     {
                         // Calculate the sum of all quantities for the specified product
-                        quantityTotal = Convert.ToInt32((from p in database.Stocks
+                        quantityTotal = (from p in database.Stocks
                                          where String.Compare(p.ProductId, productCode) == 0
-                                         select (int)p.Quantity));
+                                         select (int)p.Quantity).Sum();
                     }
                     
                 }
             }
-            catch
+            catch(Exception ex)
             {
                 // Ignore exceptions in this implementation
             }
@@ -107,7 +108,7 @@ namespace EstoqueLibrary
                         product = new StockData()
                         {
                             ProductName = matchingProduct.ProductName,
-                            ProductDesc = matchingProduct.ProductDesc,
+                            ProductDesc = matchingProduct.ProdcutDesc,
                             Quantity = matchingProduct.Quantity
 
                         };
@@ -124,14 +125,14 @@ namespace EstoqueLibrary
 
         public List<string> ListProducts()
         {
-            List<string> productsList = new List<string>();
+            List<string> products = new List<string>();
             try
             {
                 // Connect to the ProductsModel database
                 using (ProvedorEstoque database = new ProvedorEstoque())
                 {
                     // Fetch the products in the database
-                    List<string> products = (from product in database.Stocks select product.ProductName).ToList();
+                     products = (from product in database.Stocks select product.ProductName).ToList();
                    /* foreach (Product product in products)
                     {
                         ProductData productData = new ProductData()
@@ -149,7 +150,7 @@ namespace EstoqueLibrary
                 // Ignore exceptions in this implementation
             }
             // Return the list of products
-            return productsList;
+            return products;
         }
 
         public bool RemoveProducts(string productCode)
@@ -184,7 +185,7 @@ namespace EstoqueLibrary
 
         }
 
-        public bool RemoveStock(string productCode)
+        public bool RemoveStock(string productCode, int quantity)
         {
             try
             {
@@ -197,15 +198,22 @@ namespace EstoqueLibrary
                     {
                         // Find the Stock object that matches the parameters passed
                         // in to the operation
-                        Stock stock = database.Stocks.First(pi => pi.ProductId == productCode);
-                        stock.Quantity = 0;
-                        database.Stocks.Add(stock);
+                        Stock stockOrigin = database.Stocks.First(pi => pi.ProductId == productCode);
+                        Stock stockUpdated = stockOrigin;
+
+
+                        if (quantity > stockOrigin.Quantity)
+                            return false;
+
+                        stockUpdated.Quantity = stockOrigin.Quantity - quantity;
+                        database.Entry(stockOrigin).CurrentValues.SetValues(stockUpdated);
                         database.SaveChanges();
+
                     }
                 }
 
             }
-            catch
+            catch(Exception ex)
             {
                 // If an exception occurs, return false to indicate failure
                 return false;
@@ -213,6 +221,7 @@ namespace EstoqueLibrary
             // Return true to indicate success
             return true;
         }
+
         public bool ProductExists(string productCode, ProvedorEstoque database)
         {
             // Check to see whether the specified product exists in the database

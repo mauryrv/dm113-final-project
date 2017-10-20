@@ -30,10 +30,10 @@ namespace EstoqueClientV2.StockService
         System.Threading.Tasks.Task<bool> AddStockAsync(string productCode, int quantity);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://projetoavaliativo.dm113/02/IServicoEstoqueV2/RemoveStock", ReplyAction="http://projetoavaliativo.dm113/02/IServicoEstoqueV2/RemoveStockResponse")]
-        bool RemoveStock(string productCode);
+        bool RemoveStock(string productCode, int quantity);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://projetoavaliativo.dm113/02/IServicoEstoqueV2/RemoveStock", ReplyAction="http://projetoavaliativo.dm113/02/IServicoEstoqueV2/RemoveStockResponse")]
-        System.Threading.Tasks.Task<bool> RemoveStockAsync(string productCode);
+        System.Threading.Tasks.Task<bool> RemoveStockAsync(string productCode, int quantity);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -90,14 +90,14 @@ namespace EstoqueClientV2.StockService
             return base.Channel.AddStockAsync(productCode, quantity);
         }
         
-        public bool RemoveStock(string productCode)
+        public bool RemoveStock(string productCode, int quantity)
         {
-            return base.Channel.RemoveStock(productCode);
+            return base.Channel.RemoveStock(productCode, quantity);
         }
         
-        public System.Threading.Tasks.Task<bool> RemoveStockAsync(string productCode)
+        public System.Threading.Tasks.Task<bool> RemoveStockAsync(string productCode, int quantity)
         {
-            return base.Channel.RemoveStockAsync(productCode);
+            return base.Channel.RemoveStockAsync(productCode, quantity);
         }
     }
 }

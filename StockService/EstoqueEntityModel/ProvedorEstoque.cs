@@ -30,7 +30,7 @@ namespace EstoqueEntityModel
         public string ProductId { get; set; }
 
         public string ProductName { get; set; }
-        public string ProductDesc { get; set; }
+        public string ProdcutDesc { get; set; }
         public decimal Quantity { get; set; }
 
     }

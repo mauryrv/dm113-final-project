@@ -32,7 +32,7 @@ namespace EstoqueLibrary
         bool AddStock(string productCode, int quantity);
         //erase the stock of a product
         [OperationContract]
-        bool RemoveStock(string productCode);
+        bool RemoveStock(string productCode, int quantity);
         //get product detail
         [OperationContract]
         StockData getProduct(string productCode);
@@ -50,7 +50,7 @@ namespace EstoqueLibrary
         bool AddStock(string productCode, int quantity);
         //erase the stock of a product
         [OperationContract]
-        bool RemoveStock(string productCode);
+        bool RemoveStock(string productCode,int quantity);
     }
 
     // Use a data contract as illustrated in the sample below to add composite types to service operations.

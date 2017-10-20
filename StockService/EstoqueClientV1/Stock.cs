@@ -11,8 +11,6 @@
 namespace EstoqueClientV1.StockService
 {
     
-    
-    
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Stock", Namespace="http://schemas.datacontract.org/2004/07/EstoqueEntityModel")]
@@ -21,7 +19,7 @@ namespace EstoqueClientV1.StockService
         
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        private string ProductDescField;
+        private string ProdcutDescField;
         
         private string ProductIdField;
         
@@ -42,15 +40,15 @@ namespace EstoqueClientV1.StockService
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ProductDesc
+        public string ProdcutDesc
         {
             get
             {
-                return this.ProductDescField;
+                return this.ProdcutDescField;
             }
             set
             {
-                this.ProductDescField = value;
+                this.ProdcutDescField = value;
             }
         }
         
@@ -211,10 +209,10 @@ namespace EstoqueClientV1.StockService
         System.Threading.Tasks.Task<bool> AddStockAsync(string productCode, int quantity);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://projetoavaliativo.dm113/01/IServicoEstoque/RemoveStock", ReplyAction="http://projetoavaliativo.dm113/01/IServicoEstoque/RemoveStockResponse")]
-        bool RemoveStock(string productCode);
+        bool RemoveStock(string productCode, int quantity);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://projetoavaliativo.dm113/01/IServicoEstoque/RemoveStock", ReplyAction="http://projetoavaliativo.dm113/01/IServicoEstoque/RemoveStockResponse")]
-        System.Threading.Tasks.Task<bool> RemoveStockAsync(string productCode);
+        System.Threading.Tasks.Task<bool> RemoveStockAsync(string productCode, int quantity);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://projetoavaliativo.dm113/01/IServicoEstoque/getProduct", ReplyAction="http://projetoavaliativo.dm113/01/IServicoEstoque/getProductResponse")]
         EstoqueClientV1.StockService.StockData getProduct(string productCode);
@@ -307,14 +305,14 @@ namespace EstoqueClientV1.StockService
             return base.Channel.AddStockAsync(productCode, quantity);
         }
         
-        public bool RemoveStock(string productCode)
+        public bool RemoveStock(string productCode, int quantity)
         {
-            return base.Channel.RemoveStock(productCode);
+            return base.Channel.RemoveStock(productCode, quantity);
         }
         
-        public System.Threading.Tasks.Task<bool> RemoveStockAsync(string productCode)
+        public System.Threading.Tasks.Task<bool> RemoveStockAsync(string productCode, int quantity)
         {
-            return base.Channel.RemoveStockAsync(productCode);
+            return base.Channel.RemoveStockAsync(productCode, quantity);
         }
         
         public EstoqueClientV1.StockService.StockData getProduct(string productCode)
